@@ -19,7 +19,6 @@
 </template>
 
 <script lang="ts">
-import { personCircle, search } from 'ionicons/icons';
 import {
   IonContent,
   IonHeader,
@@ -47,12 +46,12 @@ export default defineComponent({
     IonIcon,
     IonAvatar
   },
-  setup(){
-    const openMenu = () => {
-      console.log('clickes star!')
-    } 
-    return {personCircle, openMenu, search};
-  }
+  // setup(){
+  //   const openMenu = () => {
+  //     console.log('clickes star!')
+  //   } 
+  //   return {personCircle, openMenu, search};
+  // }
 })
 </script>
 

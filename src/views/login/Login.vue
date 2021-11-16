@@ -4,25 +4,30 @@
       <div class="flex-center">
         <div class="containerLogin">
           <ion-thumbnail>
-            <ion-img src="/assets/img/icon.png" width=""></ion-img>
+            <ion-img src="/assets/img/icon.png"></ion-img>
           </ion-thumbnail>
 
-          <ion-text color="light">
-            <h2>ATENA CRM</h2>
+          <ion-text>
+            <h2>Atena CRM</h2>
           </ion-text>
           <ion-card>
             <ion-card-header>
-              <ion-card-title color="dark" class="ion-text-center">Inicie sua seção</ion-card-title>
+              <ion-card-title
+                color="dark"
+                class="ion-text-center ion-padding-top">Inicie sua sessão
+                </ion-card-title>
             </ion-card-header>
 
             <ion-card-content>
-              <ion-item>
+              <ion-item lines="none">
                 <ion-input placeholder="CPF"> </ion-input>
               </ion-item>
-              <ion-item>
-                <ion-input placeholder="Senha" autocomplete="on"></ion-input>
+              <ion-item lines="none">
+                <ion-input type="password" placeholder="Senha" autocomplete="on"></ion-input>
               </ion-item>
-              <ion-button type="submit" size="full" class="ion-margin-top">Acessar</ion-button>
+              <ion-button type="submit" size="full" class="ion-margin-top"
+                >Acessar</ion-button
+              > 
             </ion-card-content>
           </ion-card>
         </div>
@@ -61,6 +66,19 @@ export default {
 
 
 <style>
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.background-color{
+    --background: #800080;
+}
+.cor{
+    --color: #800080;
+}
 .containerLogin {
   display: flex;
   flex-direction: column;
@@ -68,8 +86,8 @@ export default {
 }
 
 ion-card {
-  width: 340px;
-  height: 220px;
+  width: 360px;
+  height: 230px;
 }
 
 ion-card-title {
@@ -78,9 +96,15 @@ ion-card-title {
 }
 
 ion-thumbnail {
-  --size: 100px;
+  --size: 90px;
 }
 ion-button {
   --background: #6c757d;
 }
+ion-text h2 {
+  font-weight: 300;
+  font-size: 34px;
+  color: #ffffff;
+}
 </style>
+
