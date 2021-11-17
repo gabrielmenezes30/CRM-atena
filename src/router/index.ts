@@ -1,25 +1,12 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import Home from '../views/Home.vue'
-import Login from '../views/login/Login.vue'
+import DashbordRoute from '../views/Dashbord/DashbordRoute'
+import RotaLogin from '../views/login/RotaLogin'
 
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    redirect: '/login'
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login
-    // component: () => import('../views/login/Login.vue')
-  }
-]
+
+// Concatenando o Array das rotas. 
+export const routes = ([] as Array<RouteRecordRaw>).concat(DashbordRoute, RotaLogin)
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

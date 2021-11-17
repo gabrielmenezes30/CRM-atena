@@ -37,74 +37,11 @@
 </template>
 
 
-<script>
-import {
-  IonPage,
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonInput,
-  IonLabel,
-  IonItem,
-  IonImg,
-  IonButton,
-} from "@ionic/vue";
-
-export default {
-  IonPage,
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonInput,
-  IonLabel,
-  IonItem,
-  IonImg,
-  IonButton,
-};
-</script>
+<script src="./Login.ts"></script>
 
 
 
 <style>
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.background-color{
-    --background: #800080;
-}
-.cor{
-    --color: #800080;
-}
-.containerLogin {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-ion-card {
-  width: 360px;
-  height: 230px;
-}
-
-ion-card-title {
-  font-size: 15px;
-  font-weight: normal;
-}
-
-ion-thumbnail {
-  --size: 90px;
-}
-ion-button {
-  --background: #6c757d;
-}
-ion-text h2 {
-  font-weight: 300;
-  font-size: 34px;
-  color: #ffffff;
-}
+@import './Login.css';
 </style>
 
