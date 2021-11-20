@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import DashbordRoute from '../views/Dashbord/DashbordRoute'
+import DashboardRoute from '../views/dashboard/DashboardRoute'
 import RotaLogin from '../views/login/RotaLogin'
+import AlvosRota from '../views/login/RotaLogin'
 
 
-// Concatenando o Array das rotas. 
-export const routes = ([] as Array<RouteRecordRaw>).concat(DashbordRoute, RotaLogin)
+// exportando e concatenando o Array das rotas. 
+export const routes = ([] as Array<RouteRecordRaw>).concat(DashboardRoute, RotaLogin, AlvosRota)
 
 
 const router = createRouter({

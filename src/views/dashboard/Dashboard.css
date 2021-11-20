@@ -1,0 +1,19 @@
+.card{
+    width: 280px;
+    height: 200px;
+    background-color: #ffffff;
+    margin-top: 3px;
+}
+.card-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+.buttonProfileDropDown{
+    cursor: pointer;
+}
+.buttonDropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

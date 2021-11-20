@@ -1,3 +1,4 @@
+import { defineComponent } from 'vue';
 import {
     IonPage,
     IonContent,
@@ -10,14 +11,16 @@ import {
     IonButton,
   } from "@ionic/vue";
   
-  export default {
-    IonPage,
-    IonContent,
-    IonHeader,
-    IonTitle,
-    IonInput,
-    IonLabel,
-    IonItem,
-    IonImg,
-    IonButton,
-  };
+  export default defineComponent({
+    components:{
+      IonPage,
+      IonContent,
+      IonHeader,
+      IonTitle,
+      IonInput,
+      IonLabel,
+      IonItem,
+      IonImg,
+      IonButton,
+    }
+  });

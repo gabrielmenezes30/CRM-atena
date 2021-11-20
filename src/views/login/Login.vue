@@ -20,14 +20,13 @@
 
             <ion-card-content>
               <ion-item lines="none">
-                <ion-input placeholder="CPF"> </ion-input>
+                <ion-input  class="input" placeholder="CPF"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="password" placeholder="Senha" autocomplete="on"></ion-input>
+                <ion-input class="input" type="password" placeholder="Senha" autocomplete="on"></ion-input>
               </ion-item>
               <ion-button type="submit" size="full" class="ion-margin-top"
-                >Acessar</ion-button
-              > 
+                >Acessar</ion-button> 
             </ion-card-content>
           </ion-card>
         </div>

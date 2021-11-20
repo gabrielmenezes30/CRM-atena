@@ -3,11 +3,11 @@ import { RouteRecordRaw } from 'vue-router';
 export const Rotalogin: Array<RouteRecordRaw>  = [
     {
         path: '/',
-        redirect: '/Login'
+        redirect: '/login'
     },
     {
-        path: '/Login',
-        name: 'Login',
+        path: '/login',
+        name: 'login',
         component: () =>import('../login/Login.vue')
     }
 ]
