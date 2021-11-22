@@ -1,5 +1,18 @@
-import { IonPage, IonContent, IonButtons, IonMenuButton, IonList, IonItem, menuController, IonThumbnail, IonCard, IonCardHeader, IonCardContent, IonButton } from '@ionic/vue';
+import { IonPage, IonContent, IonButtons, IonMenuButton, IonList, IonItem, IonIcon, menuController, IonThumbnail, IonCard, IonCardHeader, IonCardContent, IonButton, IonSplitPane } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { addIcons } from 'ionicons';
+import { arrowBack, arrowDown, layers, paperPlaneSharp, peopleSharp, newspaperSharp, walletSharp, arrowForwardCircle } from 'ionicons/icons';
+
+addIcons({
+  'arrow-back': arrowBack,
+  'arrow-down': arrowDown,
+  'layers': layers,
+  'paper-plane-sharp': paperPlaneSharp,
+  'people-sharp': peopleSharp,
+  'newspaper-sharp': newspaperSharp,
+  'wallet-sharp': walletSharp,
+  'arrow-forward-circle': arrowForwardCircle
+});
 
 
 export default defineComponent({
@@ -15,8 +28,11 @@ export default defineComponent({
     IonCardHeader, 
     IonCardContent, 
     IonButton,
+    IonSplitPane,
+    IonIcon,
     IonItem
   },
+  
   methods: {
     openFirst() {
       menuController.enable(true, 'first');
