@@ -91,7 +91,7 @@
                   <ion-icon name="people-sharp"></ion-icon>
                 </div>
               </div>
-              <a href="">
+              <a href="#">
                 <div class="linkGrid">
                   <div class="container-icon-grid">
                     <ion-icon name="arrow-forward-circle"> </ion-icon>
@@ -145,6 +145,7 @@
       </ion-grid>
     </ion-card>
   </ion-content>
+  
 
   <ion-router-outlet id="main"></ion-router-outlet>
 </template>
