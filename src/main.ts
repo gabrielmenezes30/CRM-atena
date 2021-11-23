@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
+// Para padronização do Layout padrao
+import LayoutPadrao from './components/LayoutPadrao.vue';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -26,6 +28,9 @@ import './theme/variables.css';
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+
+  // Para padronização do Layout padrao, toolbar e menu
+  app.component('layout-padrao', LayoutPadrao);
   
 router.isReady().then(() => {
   app.mount('#app');
