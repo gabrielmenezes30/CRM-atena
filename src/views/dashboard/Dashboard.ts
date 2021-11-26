@@ -2,6 +2,7 @@ import { IonPage, IonContent, IonButtons, IonMenuButton, IonList, IonItem, IonIc
 import { defineComponent } from 'vue';
 import { addIcons } from 'ionicons';
 import { arrowBack, arrowDown, layers, paperPlaneSharp, peopleSharp, newspaperSharp, walletSharp, arrowForwardCircle } from 'ionicons/icons';
+import Card from '../../components/card/Card.vue'
 
 addIcons({
   'arrow-back': arrowBack,
@@ -18,6 +19,7 @@ addIcons({
 export default defineComponent({
   name: 'Dashbord',
   components: {
+    Card,
     IonContent,
     IonPage,
     IonButtons,

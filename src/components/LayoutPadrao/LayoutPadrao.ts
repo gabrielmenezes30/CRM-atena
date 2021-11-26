@@ -2,6 +2,7 @@ import { IonPage, IonContent, IonButtons, IonMenuButton, IonList, IonItem, IonIc
 import { defineComponent } from 'vue';
 import { addIcons } from 'ionicons';
 import { arrowBack, arrowDown, layers, paperPlaneSharp, peopleSharp, newspaperSharp, walletSharp, arrowForwardCircle } from 'ionicons/icons';
+import { useRouter } from 'vue-router';
 
 addIcons({
   'arrow-back': arrowBack,
@@ -17,6 +18,7 @@ addIcons({
 export default defineComponent({
     name: 'Alvos',
     components: {
+      IonPage,
       IonContent,
       IonButtons,
       IonMenuButton,
@@ -50,5 +52,9 @@ export default defineComponent({
       return {
         IsOpen: false,
       }
+    },
+    setup() {
+      const router = useRouter();
+      return { router };
     }
   });

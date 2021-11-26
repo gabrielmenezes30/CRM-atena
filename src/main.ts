@@ -4,7 +4,7 @@ import router from './router';
 
 import { IonicVue } from '@ionic/vue';
 // Para padronização do Layout padrao
-import LayoutPadrao from './components/LayoutPadrao.vue';
+import LayoutPadrao from './components/LayoutPadrao/LayoutPadrao.vue';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';

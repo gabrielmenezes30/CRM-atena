@@ -3,7 +3,6 @@
         <div>Página de alvos</div>
     </layout-padrao>
 
-    
 </template>
 
 
